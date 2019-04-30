@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553264845331.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2454382284",
+    "id" : "F0D0BED3",
+    "lastKnownWriteTime" : 1553595921,
+    "last_content_update" : 1553595921240,
+    "path" : "~/Documents/R_toolkit/SciBiteR/R/termite.R",
+    "project_path" : "SciBiteR/R/termite.R",
+    "properties" : {
+        "cursorPosition" : "177,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

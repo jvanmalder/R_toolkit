@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553269310307.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3853674855",
+    "id" : "1E5891CB",
+    "lastKnownWriteTime" : 1553597022,
+    "last_content_update" : 1553597022901,
+    "path" : "~/Documents/R_toolkit/SciBiteR/R/texpress.R",
+    "project_path" : "SciBiteR/R/texpress.R",
+    "properties" : {
+        "cursorPosition" : "167,56",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

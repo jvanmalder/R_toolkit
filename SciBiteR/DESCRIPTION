@@ -1,0 +1,16 @@
+Package: SciBiteR
+Type: Package
+Title: SciBiteR: An R Interface for SciBite Platform 
+Version: 0.1.1
+Author: SciBite
+Maintainer: Adam Brown <adam@scibite.com>
+Description: This package enables license holders to access SciBite API functionality using R.
+License: file LICENSE
+LazyData: true
+Imports: 
+    httr,
+    jsonlite,
+    RCurl,
+    bitops,
+    stringr
+RoxygenNote: 6.1.1

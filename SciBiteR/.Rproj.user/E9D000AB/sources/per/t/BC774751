@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544526108672.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "294262371",
+    "id" : "BC774751",
+    "lastKnownWriteTime" : 1544533913,
+    "last_content_update" : 1544533913919,
+    "path" : "C:/Users/Adam/OneDrive - SciBite/Development/SciBiteR/autocomplete_demo/app.R",
+    "project_path" : "autocomplete_demo/app.R",
+    "properties" : {
+        "cursorPosition" : "12,4",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
