@@ -1,7 +1,7 @@
 library(shiny)
 
 # UI
-ui <- fluidPage(
+ui <- shiny::fluidPage(
   textInput(inputId = 'text', label = 'text'),
   uiOutput("autobox"),
   textOutput("autoid")
@@ -9,24 +9,24 @@ ui <- fluidPage(
 
 # Server
 server <- function(input, output, session) {
-  autotext <- reactive({ input$text })
-  output$autobox <- renderUI(
+  autotext <- shiny::reactive({ input$text })
+  output$autobox <- shiny::renderUI(
     if (nchar(autotext()) < 3) {
-      selectInput(inputId = 'autobox', label = 'Autocomplete', choices = autotext())
+      shiny::selectInput(inputId = 'autobox', label = 'Autocomplete', choices = autotext())
     }
     else {
-      auto <- autocomplete(endpoint <- "http://localhost:9090/termite/toolkit/autocomplete.api",
+      auto <- SciBiteR::autocomplete(endpoint <- "http://localhost:9090/termite/toolkit/autocomplete.api",
                            input <- autotext(),
                            VOCab = "SPECIES",
                            taxon = '')
       reactiveauto <- auto$id
       names(reactiveauto) <- auto$label
-      selectInput(inputId = 'autobox', label = 'Autocomplete', choices = reactiveauto)
+      shiny::selectInput(inputId = 'autobox', label = 'Autocomplete', choices = reactiveauto)
     }
 
   )
-  output$autoid <- renderText({ input$autobox })
+  output$autoid <- shiny::renderText({ input$autobox })
 }
 
 # Run app
-shinyApp(ui = ui, server = server)
+shiny::shinyApp(ui = ui, server = server)
