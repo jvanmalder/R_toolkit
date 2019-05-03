@@ -2,6 +2,10 @@ library(shiny)
 
 # UI
 ui <- shiny::fluidPage(
+  titlePanel("SciBite Autocomplete Demo"),
+  mainPanel("This is SciBite's autocomplete demo, using the \"SPECIES\" VOCab. Please ensure that the SPECIES VOCab is
+            loaded into your TERMite server before continuing. Start typing into the text box to see the autocomplete
+            options appear in the dropdown (e.g. \"mous\")."),
   textInput(inputId = 'text', label = 'text'),
   uiOutput("autobox"),
   textOutput("autoid")
