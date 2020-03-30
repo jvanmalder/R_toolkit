@@ -49,7 +49,8 @@ TERMite(endpoint="http://localhost:9090/termite",
 ############
 
 endpoint <- "http://localhost:9090/texpress"
-input <- "/Users/rachaelturner/Documents/Atopic_Dermatitis/PatternScore_Notebook/Pubmed_miniSample.xml"
+# download sample pubmed XML and provide path below
+input <- "path/to/pubmed.xml"
 inputFile <- TRUE
 inputFileFormat <- "pubmed"
 outputFile <- NULL

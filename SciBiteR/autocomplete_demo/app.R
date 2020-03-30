@@ -14,7 +14,7 @@ ui <- shiny::fluidPage(
                             "textbox, then start typing in the",
                             strong("Text"),
                             "textbox."),
-                          em("As an example, use \"HUCELL\" as the VOCab and start typing \"macro\"."),
+                          em("As an example, use \"SPECIES\" as the VOCab and start typing \"macro\"."),
                           div("Only VOCabs preloaded into your TERMite server can be used.", style = "color:red"),
                           textInput(inputId = 'VOCabInput', label = 'VOCab'),
                           textInput(inputId = 'text', label = 'Text'))
