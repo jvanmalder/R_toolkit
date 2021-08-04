@@ -24,6 +24,9 @@
 #' @param options A named list enumerating the runtime options to be used. Names
 #'   correspond to valid TERMite options and values correspond to valid option
 #'   settings.
+#' @param headers A character vector enumerating the HTTP headers to be added to
+#'   the HTTP request. Defaults to \code{NULL}, which will not add any extra
+#'   HTTP headers to the HTTP request.
 #' @example
 #' endpoint <- "http://localhost:9090/termite"
 #' input <- "macrophage colony stimulating factor"
@@ -48,7 +51,8 @@ TERMite <- function(endpoint="http://localhost:9090/termite",
                     outputFile = NULL,
                     outputFormat = "json",
                     VOCabs = NULL,
-                    options = NULL){
+                    options = NULL,
+                    headers = NULL){
 
   # Error Block -----
   # Input file specificed but no format specified
@@ -97,7 +101,8 @@ TERMite <- function(endpoint="http://localhost:9090/termite",
   response_raw <- httr::POST(
     url = endpoint,
     body = payload,
-    encode = "multipart"
+    encode = "multipart",
+    httr::add_headers(headers)
   )
 
   #response_json <- fromJSON(response, flatten = FALSE)

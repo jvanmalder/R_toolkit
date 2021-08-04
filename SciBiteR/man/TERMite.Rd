@@ -36,6 +36,10 @@ annotation. Defaults to \code{NULL}, all primary VOCabs will be applied.}
 \item{options}{A named list enumerating the runtime options to be used. Names
 correspond to valid TERMite options and values correspond to valid option
 settings.}
+
+\item{headers}{A character vector enumerating the HTTP headers to be added to
+the HTTP request. Defaults to \code{NULL}, which will not add any extra
+HTTP headers to the HTTP request.}
 }
 \description{
 \code{TERMite} passes user-specified information to a TERMite API endpoint.
